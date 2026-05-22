@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki Resep Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="ui-container">
+        <!-- SISI KIRI: Daftar Wiki -->
+        <aside class="sidebar">
+            <h2>Wiki Resep</h2>
+            <ul id="recipe-list">
+                <!-- Diisi otomatis oleh JS (Nama + Ikon Kecil) -->
+            </ul>
+        </aside>
+
+        <!-- SISI KANAN: Tampilan Detail -->
+        <main class="main-content">
+            <!-- Box Harga Teratas -->
+            <div class="price-tag">
+                Harga Jual: <span id="recipe-price">-</span>
+            </div>
+            
+            <div class="recipe-detail">
+                <!-- Gambar Utama Makanan -->
+                <div class="main-image-container">
+                    <img id="recipe-img" src="" alt="" style="display: none;">
+                </div>
+
+                <h1 id="recipe-title">Pilih Menu Wiki</h1>
+                <p id="recipe-description">Silakan pilih salah satu resep di sebelah kiri untuk melihat resep lengkap dan bahan-bahannya.</p>
+                
+                <!-- Box Tambahan untuk Resep/Bahan Pembuatan -->
+                <div id="ingredients-section" style="display: none; margin-top: 20px;">
+                    <h3>Bahan-Bahan yang Dibutuhkan:</h3>
+                    <div id="ingredients-list" class="ingredients-flex">
+                        <!-- Ikon bahan-bahan akan muncul di sini -->
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
